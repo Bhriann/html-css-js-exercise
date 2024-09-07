@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtakuCanvas Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+     <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><h1>𝑶𝒕𝒂𝒌𝒖𝑪𝒂𝒏𝒗𝒂𝒔</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#portfolio"><h4>𝗣𝗢𝗥𝗧𝗙𝗢𝗟𝗜𝗢</h4></a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact"><h4>𝗖𝗢𝗡𝗧𝗔𝗖𝗧</h4></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center"><b>My Projects</b></h2>
+            <div class="row">
+
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/Apocaplyse Manga Jacket.JPG" class="card-img-top" alt="Project 1" width="100%" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title project-title" align="center" onclick="changeBackgroundColor()"><b>Apocalypse Manga Jacket</b></h5>
+                            <p class="card-text" align="justify-content-between">A manga jacket/sleeve designed for the "Undead Unluck" manga by Yoshifumi Tozuka.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project1Modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/Yatora Yaguchi.HEIC" class="card-img-top" alt="Project 2" width="100%" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title project-title" align="center" onclick="changeBackgroundColor()"><b>Yatora in Blue</b></h5>
+                            <p class="card-text" align="justify-content-between">An all blue colored artwork of the main character from the "Blue Period" manga by Tsubasa Yamaguchi.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project2Modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/Laurent and Edamura.jpg" class="card-img-top" alt="Project 3" width="100%" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title project-title" align="center" onclick="changeBackgroundColor()"><b>The Great Pretenders</b></h5>
+                            <p class="card-text" align="justify-content-between">A digital artwork of the two main characters from the Netflix original anime titled "The Great Pretender." </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project3Modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Detailed Description for Projects -->
+    <!-- Project 1 Detailed Desc  -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel"><b>Apocalypse Manga Jacket</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body" align="justify-content-between">
+                    Apocalpyse is a book-like character who is considered as the first artifact discovered in the world and a loyal servant of God in the "Undead Unluck universe." 
+                    When a person touches him, they will be able to witness a series of future events that depict the end of the world caused by God if they do not complete all of their assignments.
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 Detailed Desc  -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel"><b>Yatora in Blue</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body" align="justify-content-between">
+                    Yatora Yaguchi, a second-year high school student with exceptional high grades while being delinquent, strives to become a passionate artist 
+                    by aiming to pass the Tokyo University of the Arts entrance exam after witnessing the dawn scene of Shibuya in a shade of blue, which deeply affects him.
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3 Detailed Desc  -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project3ModalLabel"><b>The Great Pretenders</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body" align="justify-content-between">
+                    Japan's greatest swindler, Makoto Edamura (the guy with glasses), unexpectedly gets tricked by a Frenchman named Laurent Thierry (the blonde one), 
+                    who is a professional conman in control of the mafias. Edamura is yet to discover his destiny after doing the Frenchman's dirty work.
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center"><b>Contact Me</b></h2>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><b>Email Address</b></label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"><b>Message</b></label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
+                </div>
+                
+                <div class="submit-btn-container"></div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>     
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <p><h4>Copyright © 2024 OtakuCanvas | All Rights Reserved</h4></p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
